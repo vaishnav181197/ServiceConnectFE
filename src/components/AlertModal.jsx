@@ -3,7 +3,7 @@ import React from 'react'
 function AlertModal() {
     return (
         <>
-            <div className='container flex flex-col justify-around items-center p-4 w-fit min-h-1/2  border-2 border-black rounded-lg '>
+            <div className='container bg-gray-100 shadow flex flex-col justify-around items-center p-4 w-fit min-h-1/2  border-3 border-black rounded-xl '>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRD9watd98GuxuplYkqW5OizlYfQa_Iy4_3g&s" alt="logo" style={{ height: '100px', width: '100px' }} />
                 <h2 className='font-extrabold'>Congratulations!</h2>
                 <p className='text-center w-1/2'>

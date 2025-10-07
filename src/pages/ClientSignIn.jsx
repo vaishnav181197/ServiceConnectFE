@@ -6,7 +6,7 @@ function ClientSignIn() {
     
   return (
     <>
-    <div className='container py-10 max-h-screen' style={{backgroundColor:''}}>
+    <div className='container bg-gray-200 py-10 min-h-screen' style={{backgroundColor:''}}>
         <AuthHeader/>
         <AuthForm signin={true}/>
         <AuthFooter signin={true}/>  
