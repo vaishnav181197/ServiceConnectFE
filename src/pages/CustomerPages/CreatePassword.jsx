@@ -1,6 +1,6 @@
 import React from 'react'
-import AppHeader from '../components/AppHeader'
-import CreatePassForm from '../components/CreatePassForm'
+import AppHeader from '../../components/Customer_components/AppHeader'
+import CreatePassForm from '../../components/Customer_components/CreatePassForm'
 function CreatePassword() {
     return (
         <div className='w-full min-h-screen flex flex-col justify-between items-center bg-gray-200'>

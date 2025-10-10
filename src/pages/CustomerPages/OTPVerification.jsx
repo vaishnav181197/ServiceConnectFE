@@ -1,6 +1,6 @@
 import React from 'react'
-import AppHeader from '../components/AppHeader'
-import OTPVerify from '../components/OTPVerify'
+import AppHeader from '../../components/Customer_components/AppHeader'
+import OTPVerify from '../../components/Customer_components/OTPVerify'
 function OTPVerification() {
   return (
     <>

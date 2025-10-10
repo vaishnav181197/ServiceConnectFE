@@ -1,7 +1,7 @@
 import React from 'react'
-import AuthHeader from '../components/AuthHeader'  
-import AuthForm from '../components/AuthForm'
-import AuthFooter from '../components/AuthFooter'
+import AuthHeader from '../../components/Customer_components/AuthHeader'  
+import AuthForm from '../../components/Customer_components/AuthForm'
+import AuthFooter from '../../components/Customer_components/AuthFooter'
 function ClientSignIn() {
     
   return (

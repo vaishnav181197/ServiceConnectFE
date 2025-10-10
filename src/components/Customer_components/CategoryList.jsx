@@ -10,7 +10,7 @@ function CategoryList() {
     ]
     return (
         <>
-            <div className='mt-5 px-3'>
+            <div className='mt-10 px-3'>
                 <div className='flex justify-between items-center mb-3'>
                     <h3 className='font-bold'>Service Category</h3>
                     <Link className='text-sm'>SEE ALL</Link>

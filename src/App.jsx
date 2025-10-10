@@ -1,15 +1,17 @@
 import './App.css'
-import AddProfile from './pages/AddProfile'
-import ClientAuth from './pages/ClientAuth'
-import ClientSignIn from './pages/ClientSignIn'
-import CongratsAlert from './pages/CongratsAlert'
-import CreatePassword from './pages/CreatePassword'
-import ForgotPasswordPage from './pages/ForgotPasswordPage'
-import OTPVerification from './pages/OTPVerification'
 import {Route,Routes} from 'react-router-dom'
-import SplashScreen from './pages/SplashScreen'
-import ClientHome from './pages/ClientHome'
-import AllCategories from './pages/AllCategories'
+
+import AddProfile from './pages/CustomerPages/AddProfile'
+import ClientAuth from './pages/CustomerPages/ClientAuth'
+import ClientSignIn from './pages/CustomerPages/ClientSignIn'
+import CongratsAlert from './pages/CustomerPages/CongratsAlert'
+import CreatePassword from './pages/CustomerPages/CreatePassword'
+import ForgotPasswordPage from './pages/CustomerPages/ForgotPasswordPage'
+import OTPVerification from './pages/CustomerPages/OTPVerification'
+import SplashScreen from './pages/CustomerPages/SplashScreen'
+import ClientHome from './pages/CustomerPages/ClientHome'
+import AllCategories from './pages/CustomerPages/AllCategories'
+import DeliveryServices from './pages/CustomerPages/DeliveryServices'
 function App() {
 
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path='alert' element={<CongratsAlert/>}/>
         <Route path='clienthome' element={<ClientHome/>}/>
         <Route path='allcategory' element={<AllCategories/>}/>
+        <Route path='deliveryservice' element={<DeliveryServices/>}/>
       </Routes>
     </>
   )

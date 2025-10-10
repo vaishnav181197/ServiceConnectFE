@@ -17,7 +17,7 @@ function Banner() {
     };
     return (
         <>
-            <div className="relative w-full max-w-xxl mt-3 mx-auto">
+            <div className="relative w-3/4 max-w-xxl mt-5 mx-auto">
                 {/* Image */}
                 <div className="overflow-hidden rounded-2xl relative">
                     <img

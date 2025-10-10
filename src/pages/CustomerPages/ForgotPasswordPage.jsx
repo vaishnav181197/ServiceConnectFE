@@ -1,6 +1,6 @@
 import React from 'react'
-import AppHeader from '../components/AppHeader'
-import ForgotPassword from '../components/ForgotPassword'
+import AppHeader from '../../components/Customer_components/AppHeader'
+import ForgotPassword from '../../components/Customer_components/ForgotPassword'
 
 function ForgotPasswordPage() {
     return (

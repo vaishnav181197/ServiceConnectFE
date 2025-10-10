@@ -1,6 +1,6 @@
 import React from 'react'
-import AppHeader from '../components/AppHeader'
-import ProfileForm from '../components/ProfileForm'
+import AppHeader from '../../components/Customer_components/AppHeader'
+import ProfileForm from '../../components/Customer_components/ProfileForm'
 
 function AddProfile() {
   return (

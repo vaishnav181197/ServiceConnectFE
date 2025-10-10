@@ -16,7 +16,7 @@ function Search() {
 
                     </span>
                 </div>
-                <div className='w-full grid grid-cols-3 border-3 bg-white rounded-full mt-3'>
+                <div className='w-3/4 mx-auto grid grid-cols-3 border-3 bg-white rounded-full mt-3'>
                     <button className='bg-white rounded-full hover:bg-black hover:text-white'>
                         Near By
                     </button>

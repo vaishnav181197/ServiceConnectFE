@@ -1,5 +1,5 @@
 import React from 'react'
-import AlertModal from '../components/AlertModal'
+import AlertModal from '../../components/Customer_components/AlertModal'
 function CongratsAlert() {
   return (
     <>

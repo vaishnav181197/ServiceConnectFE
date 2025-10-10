@@ -1,7 +1,8 @@
 import React from 'react'
-import AppHeader from '../components/AppHeader'
-import Category from '../components/Category'
-import Toolbar from '../components/Toolbar'
+
+import Category from '../../components/Customer_components/Category'
+import Toolbar from '../../components/Customer_components/Toolbar'
+import AppHeader from '../../components/Customer_components/AppHeader'
 
 function AllCategories() {
      const list=[
@@ -18,7 +19,7 @@ function AllCategories() {
     ]
   return (
     <div className='w-full min-h-screen flex flex-col bg-gray-200'>
-        <AppHeader title={'ALL CATEGORIES'} />
+        <AppHeader title={'ALL CATEGORIES'} settings={true} search={true}/>
         <div className='w-full h-fit p-5 grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-5'>
             {list.map((item,index)=>(
                 <Category key={index} allcat={true} image={item.image} title={item.title}/>
