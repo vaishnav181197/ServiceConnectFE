@@ -12,6 +12,13 @@ import SplashScreen from './pages/CustomerPages/SplashScreen'
 import ClientHome from './pages/CustomerPages/ClientHome'
 import AllCategories from './pages/CustomerPages/AllCategories'
 import DeliveryServices from './pages/CustomerPages/DeliveryServices'
+import SearchPage from './pages/CustomerPages/SearchPage'
+import CakeDelivery from './pages/CustomerPages/CakeDelivery'
+import FilterPage from './pages/CustomerPages/FilterPage'
+
+import ServiceProfilePage from './pages/CustomerPages/ServiceProfilePage'
+import RequestService from './pages/CustomerPages/RequestService'
+import Bookings from './pages/CustomerPages/Bookings'
 function App() {
 
   return (
@@ -28,6 +35,13 @@ function App() {
         <Route path='clienthome' element={<ClientHome/>}/>
         <Route path='allcategory' element={<AllCategories/>}/>
         <Route path='deliveryservice' element={<DeliveryServices/>}/>
+        <Route path='search' element={<SearchPage/>}/>
+        <Route path='delivery' element={<CakeDelivery/>}/>
+        <Route path='filter' element={<FilterPage/>}/>
+
+        <Route path='serviceprofile' element={<ServiceProfilePage/>}/>
+        <Route path='requestservice' element={<RequestService/>}/>
+        <Route path='bookings' element={<Bookings/>}/>
       </Routes>
     </>
   )
