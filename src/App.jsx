@@ -21,6 +21,11 @@ import RequestService from './pages/CustomerPages/RequestService'
 import Bookings from './pages/CustomerPages/Bookings'
 import BookingDetails from './pages/CustomerPages/BookingDetails'
 import PaymentMethod from './pages/CustomerPages/PaymentMethod'
+import PaymentCongrats from './pages/CustomerPages/PaymentCongrats'
+import Ereciept from './pages/CustomerPages/Ereciept'
+import Review from './pages/CustomerPages/Review'
+import ReviewList from './pages/CustomerPages/ReviewList'
+import AddCard from './pages/CustomerPages/AddCard'
 function App() {
 
   return (
@@ -31,6 +36,7 @@ function App() {
         <Route path='signin' element={<ClientSignIn/>}/>
         <Route path='otp' element={<OTPVerification/>}/>
         <Route path='addprofile' element={<AddProfile/>}/>
+        <Route path='signupcongrats' element={<CongratsAlert/>}/>
         <Route path='fpass' element={<ForgotPasswordPage/>}/>
         <Route path='crtpass' element={<CreatePassword/>}/>
         <Route path='alert' element={<CongratsAlert/>}/>
@@ -46,6 +52,11 @@ function App() {
         <Route path='bookings' element={<Bookings/>}/>
         <Route path='bookingdetails' element={<BookingDetails/>}/>
         <Route path='paymethods' element={<PaymentMethod/>}/>
+        <Route path='paymentcongrats' element={<PaymentCongrats/>}/>
+        <Route path='ereciept' element={<Ereciept/>}/>
+        <Route path='review' element={<Review/>}/>
+        <Route path='reviewlist' element={<ReviewList/>}/>
+        <Route path='addcard' element={<AddCard/>}/>
       </Routes>
     </>
   )
