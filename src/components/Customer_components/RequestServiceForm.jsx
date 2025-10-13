@@ -1,9 +1,9 @@
 import React from 'react'
 
-function RequestServiceForm() {
+function RequestServiceForm({bd}) {
   return (
     <>
-      <div className='w-full min-h-full p-5'>
+      <div className='w-full min-h-full p-5 md:p-20'>
 
         <div className='w-full flex items-start gap-3'>
           <img src="https://cdn-icons-png.freepik.com/512/6997/6997484.png" className='rounded-full' alt="prfl" height={'70px'} width={'70px'} />
@@ -45,13 +45,25 @@ function RequestServiceForm() {
             </div>
           </div>
         </div>
-
+        {
+          bd ?
+          <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+          Reschedule Appoinment
+          <span className='p-1 bg-white rounded-full ml-10'>
+            <i className="fa-solid fa-arrow-right text-black"></i>
+          </span>
+        </button>
+        :
         <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
           Confirm
           <span className='p-1 bg-white rounded-full ml-10'>
             <i className="fa-solid fa-arrow-right text-black"></i>
           </span>
         </button>
+
+        }
+
+        
 
       </div>
     </>

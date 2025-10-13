@@ -19,6 +19,8 @@ import FilterPage from './pages/CustomerPages/FilterPage'
 import ServiceProfilePage from './pages/CustomerPages/ServiceProfilePage'
 import RequestService from './pages/CustomerPages/RequestService'
 import Bookings from './pages/CustomerPages/Bookings'
+import BookingDetails from './pages/CustomerPages/BookingDetails'
+import PaymentMethod from './pages/CustomerPages/PaymentMethod'
 function App() {
 
   return (
@@ -42,6 +44,8 @@ function App() {
         <Route path='serviceprofile' element={<ServiceProfilePage/>}/>
         <Route path='requestservice' element={<RequestService/>}/>
         <Route path='bookings' element={<Bookings/>}/>
+        <Route path='bookingdetails' element={<BookingDetails/>}/>
+        <Route path='paymethods' element={<PaymentMethod/>}/>
       </Routes>
     </>
   )
