@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BookingReceipt() {
+function BookingReceipt({ asd }) {
     return (
         <>
             <div className='w-full min-h-full p-5 mb-3 md:p-20'>
@@ -47,12 +47,31 @@ function BookingReceipt() {
                         </div>
                     </div>
                 </div>
-                <button class="w-full mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-                    Accept & Pay Full<i class="fa-solid fa-angle-down"></i>
-                    <span className='p-1 bg-white rounded-full ml-10'>
-                        <i className="fa-solid fa-arrow-right text-black"></i>
-                    </span>
-                </button>
+                {
+                    asd ?
+                        <>
+                            <button class="w-full mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+                                Complete Payment
+                                <span className='p-1 bg-white rounded-full ml-10'>
+                                    <i className="fa-solid fa-arrow-right text-black"></i>
+                                </span>
+                            </button>
+                            <button class="w-full mt-3 bg-red-950 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+                                Raise a Complaint
+                                <span className='p-1 bg-white rounded-full ml-10'>
+                                    <i className="fa-solid fa-arrow-right text-black"></i>
+                                </span>
+                            </button>
+                        </>
+                        :
+                        <button class="w-full mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+                            Accept & Pay Full<i class="fa-solid fa-angle-down"></i>
+                            <span className='p-1 bg-white rounded-full ml-10'>
+                                <i className="fa-solid fa-arrow-right text-black"></i>
+                            </span>
+                        </button>
+                }
+
             </div>
         </>
     )

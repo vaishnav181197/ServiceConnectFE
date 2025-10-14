@@ -1,6 +1,6 @@
 import React from 'react'
 
-function RequestServiceForm({bd}) {
+function RequestServiceForm({ bd, asd }) {
   return (
     <>
       <div className='w-full min-h-full p-5 md:p-20'>
@@ -47,23 +47,31 @@ function RequestServiceForm({bd}) {
         </div>
         {
           bd ?
-          <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-          Reschedule Appoinment
-          <span className='p-1 bg-white rounded-full ml-10'>
-            <i className="fa-solid fa-arrow-right text-black"></i>
-          </span>
-        </button>
-        :
-        <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-          Confirm
-          <span className='p-1 bg-white rounded-full ml-10'>
-            <i className="fa-solid fa-arrow-right text-black"></i>
-          </span>
-        </button>
+            <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+              Reschedule Appoinment
+              <span className='p-1 bg-white rounded-full ml-10'>
+                <i className="fa-solid fa-arrow-right text-black"></i>
+              </span>
+            </button>
+            :
+            <button class="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+              {
+                asd ?
+                  <>Completed</>
+                  :
+                  <>
+                    Confirm
+                    <span className='p-1 bg-white rounded-full ml-10'>
+                      <i className="fa-solid fa-arrow-right text-black"></i>
+                    </span>€
+                  </>
+              }
+
+            </button>
 
         }
 
-        
+
 
       </div>
     </>

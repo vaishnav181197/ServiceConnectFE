@@ -26,6 +26,8 @@ import Ereciept from './pages/CustomerPages/Ereciept'
 import Review from './pages/CustomerPages/Review'
 import ReviewList from './pages/CustomerPages/ReviewList'
 import AddCard from './pages/CustomerPages/AddCard'
+import ActiveServices from './pages/CustomerPages/ActiveServices'
+import ActiveServiceDetails from './pages/CustomerPages/ActiveServiceDetails'
 function App() {
 
   return (
@@ -57,6 +59,8 @@ function App() {
         <Route path='review' element={<Review/>}/>
         <Route path='reviewlist' element={<ReviewList/>}/>
         <Route path='addcard' element={<AddCard/>}/>
+        <Route path='activeservices' element={<ActiveServices/>}/>
+        <Route path='activeservicedetails' element={<ActiveServiceDetails/>}/>
       </Routes>
     </>
   )
