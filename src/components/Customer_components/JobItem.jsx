@@ -38,34 +38,46 @@ function JobItem({ job }) {
       </div>
 
       {/* Scheduleddetails */}
-      
-        <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600 mb-3">
-          <div className="flex items-center gap-1">
-            Amount :
-            <span>{job.amount}/-</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <i className="fa-solid text-red-600 fa-circle-info"></i>
-            <span className='text-red-600'>
-              {job.additionalreq &&
-                <>
-                  Additional Requirements
-                </>
-              }
-            </span>
-          </div>
+
+      <div className="flex flex-wrap items-center gap-3 text-sm text-gray-600 mb-3">
+        <div className="flex items-center gap-1">
+          Amount :
+          <span>{job.amount}/-</span>
         </div>
-      
+        <div className="flex items-center gap-1">
+          <i className="fa-solid text-red-600 fa-circle-info"></i>
+          <span className='text-red-600'>
+            {job.additionalreq &&
+              <>
+                Additional Requirements
+              </>
+            }
+          </span>
+        </div>
+      </div>
+
 
 
       {/* Status Bar */}
+      {
+        job.status == "Pending" ?
+          <button class="w-full relative bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+            Chat / Call
+            <span className='p-1 bg-white rounded-full absolute right-1 top-1'>
+              <i className="fa-solid fa-arrow-right text-green-500"></i>
+            </span>
+          </button>
+          :
+          <button class="w-full relative bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
+            Complete Payment
+            <span className='p-1 bg-white rounded-full absolute right-1 top-1'>
+              <i className="fa-solid fa-arrow-right text-green-500"></i>
+            </span>
+          </button>
 
-      <button class="w-full relative bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-        Complete Payment
-        <span className='p-1 bg-white rounded-full absolute right-1 top-1'>
-          <i className="fa-solid fa-arrow-right text-green-500"></i>
-        </span>
-      </button>
+      }
+
+
 
 
     </div>

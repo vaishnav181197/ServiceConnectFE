@@ -28,6 +28,11 @@ import ReviewList from './pages/CustomerPages/ReviewList'
 import AddCard from './pages/CustomerPages/AddCard'
 import ActiveServices from './pages/CustomerPages/ActiveServices'
 import ActiveServiceDetails from './pages/CustomerPages/ActiveServiceDetails'
+import Complaints from './pages/CustomerPages/Complaints'
+import ServiceCompleted from './pages/CustomerPages/ServiceCompleted'
+import Transactions from './pages/CustomerPages/Transactions'
+import UserProfile from './pages/CustomerPages/UserProfile'
+import EditUserProfile from './pages/CustomerPages/EditUserProfile'
 function App() {
 
   return (
@@ -61,6 +66,11 @@ function App() {
         <Route path='addcard' element={<AddCard/>}/>
         <Route path='activeservices' element={<ActiveServices/>}/>
         <Route path='activeservicedetails' element={<ActiveServiceDetails/>}/>
+        <Route path='complaints' element={<Complaints/>}/>
+        <Route path='servicecompleted' element={<ServiceCompleted/>}/>
+        <Route path='transactions' element={<Transactions/>}/>
+        <Route path='userprofile' element={<UserProfile/>}/>
+        <Route path='edituserprofile' element={<EditUserProfile/>}/>
       </Routes>
     </>
   )
