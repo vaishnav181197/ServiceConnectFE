@@ -39,6 +39,9 @@ import About from './pages/CustomerPages/About'
 import TermsConditions from './pages/CustomerPages/TermsConditions'
 import Notifications from './pages/CustomerPages/Notifications'
 import HelpCenter from './pages/CustomerPages/HelpCenter'
+import NotificationSettings from './pages/CustomerPages/NotificationSettings'
+import Security from './pages/CustomerPages/Security'
+import ChatBox from './pages/CustomerPages/ChatBox'
 function App() {
 
   return (
@@ -82,6 +85,9 @@ function App() {
         <Route path='terms' element={<TermsConditions/>}/>
         <Route path='notifications' element={<Notifications/>}/>
         <Route path='helpcenter' element={<HelpCenter/>}/>
+        <Route path='notifsettings' element={<NotificationSettings/>}/>
+        <Route path='security' element={<Security/>}/>
+        <Route path='chatbox' element={<ChatBox/>}/>
       </Routes>
     </>
   )
