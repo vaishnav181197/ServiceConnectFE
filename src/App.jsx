@@ -33,6 +33,12 @@ import ServiceCompleted from './pages/CustomerPages/ServiceCompleted'
 import Transactions from './pages/CustomerPages/Transactions'
 import UserProfile from './pages/CustomerPages/UserProfile'
 import EditUserProfile from './pages/CustomerPages/EditUserProfile'
+import UserProfileMenuBar from './components/Customer_components/UserProfileMenuBar'
+import UserMenuPage from './pages/CustomerPages/UserMenuPage'
+import About from './pages/CustomerPages/About'
+import TermsConditions from './pages/CustomerPages/TermsConditions'
+import Notifications from './pages/CustomerPages/Notifications'
+import HelpCenter from './pages/CustomerPages/HelpCenter'
 function App() {
 
   return (
@@ -71,6 +77,11 @@ function App() {
         <Route path='transactions' element={<Transactions/>}/>
         <Route path='userprofile' element={<UserProfile/>}/>
         <Route path='edituserprofile' element={<EditUserProfile/>}/>
+        <Route path='userprofilemenu' element={<UserMenuPage/>}/>
+        <Route path='about' element={<About/>}/>
+        <Route path='terms' element={<TermsConditions/>}/>
+        <Route path='notifications' element={<Notifications/>}/>
+        <Route path='helpcenter' element={<HelpCenter/>}/>
       </Routes>
     </>
   )
