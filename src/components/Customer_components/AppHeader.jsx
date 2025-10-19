@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import HeaderDropDown from './HeaderDropDown'
 
-function AppHeader({ title, menu, notific, profile, search, settings, whiteheader, option }) {
+function AppHeader({ title, menu, notific, profile, search, settings, whiteheader, option,call }) {
   const [dropdown, setDropdown] = useState(false)
 
   const toggleDropdown = () => {
@@ -29,7 +29,8 @@ function AppHeader({ title, menu, notific, profile, search, settings, whiteheade
       <div className="flex items-center gap-3 relative">
         {notific && <i className="fa-solid fa-bell text-white"></i>}
         {profile && <i className="fa-solid fa-user text-white"></i>}
-        {search && <i className="fa-solid fa-magnifying-glass text-white"></i>}
+        {search && <i className={whiteheader?"fa-solid fa-magnifying-glass text-black":"fa-solid fa-magnifying-glass text-white"}></i>}
+        {call && <i className={whiteheader?"fa-solid fa-phone text-black":"fa-solid fa-phone text-white"}></i>}
         {settings && <i class="fa-solid text-white fa-sliders"></i>}
         {option && <i className="text-white fa-solid fa-ellipsis-vertical" onClick={toggleDropdown}></i>}
         {option &&

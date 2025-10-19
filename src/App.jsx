@@ -42,6 +42,8 @@ import HelpCenter from './pages/CustomerPages/HelpCenter'
 import NotificationSettings from './pages/CustomerPages/NotificationSettings'
 import Security from './pages/CustomerPages/Security'
 import ChatBox from './pages/CustomerPages/ChatBox'
+import ChatHistory from './pages/CustomerPages/ChatHistory'
+import InviteFrnd from './pages/CustomerPages/InviteFrnd'
 function App() {
 
   return (
@@ -88,6 +90,8 @@ function App() {
         <Route path='notifsettings' element={<NotificationSettings/>}/>
         <Route path='security' element={<Security/>}/>
         <Route path='chatbox' element={<ChatBox/>}/>
+        <Route path='chathistory' element={<ChatHistory/>}/>
+        <Route path='invitefrnd' element={<InviteFrnd/>}/>
       </Routes>
     </>
   )
